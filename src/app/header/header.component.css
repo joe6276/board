@@ -1,0 +1,166 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins';
+}
+.container1 video{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    opacity:0.8;
+
+
+}
+
+.container1{
+    position:absolute;
+    right:0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color:#fff;
+    z-index:2;
+    
+}
+
+.container1 header{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:40px 100px;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* }
+.menu-main ul{
+    display: flex;
+    position: absolute;
+    left: 0;
+    justify-content: space-evenly;
+   color: white;
+    right: 0;
+    top: 90;
+}
+
+.menu-main ul li{
+    list-style-type: none;
+}
+
+.menu-main ul li a{
+   text-decoration: none;
+}
+
+
+.toggle
+{
+position: relative;
+width: 60px;
+height: 60px;
+background: url('../../assets/schol.png');
+background-repeat: no-repeat;
+background-size: 30px;
+background-position: center;
+cursor: pointer;
+}
+
+.toggle.active{
+    background:url('https://i.ibb.co/rt3HybH/close.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+
+.container video{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    opacity:0.8;
+
+
+}
+
+.text{
+    position: relative;
+    z-index: 5;
+}
+
+.text h2{
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p{
+    font-size: 1.1em;
+    margin:20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text h3{
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text a{
+    text-decoration:  none;
+     background-color: #fff;
+      color: black;
+      letter-spacing: 2px;
+      padding :10px 30px;
+      margin-top:10px;
+      text-transform: uppercase;
+      transition: 0.2s;
+
+}
+
+.text a :hover{
+    
+    letter-spacing: 6px;
+}
+
+
+
+
+.social li a{
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.5);
+}
+
+@media (max-width:991PX) {
+
+    .showcase, .showcase header{
+        padding: 40PX;
+    }
+
+    .text h3{
+        font-size: 2em;
+    }
+    
+    .text h2{
+        font-size: 2em;
+    }
+} */

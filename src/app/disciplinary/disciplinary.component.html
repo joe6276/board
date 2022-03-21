@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <div  *ngFor="let scholar of scholars">
+                <div class="panel panel-default" *ngIf="scholar.role!='teacher' else nosus">
+                    <div class="panel-heading">
+                        {{scholar.name}}
+                       </div>
+                       
+                       <br>
+                       <div class="row">
+                           <div class="col-xs-12">
+                            <div class="pull-left">
+                              
+                      
+                                <p class="list-group-item-text">Email : {{scholar.email}}</p>
+                                <p  style="color:red;"> Year : {{scholar.year}}</p>
+                                <p  style="color:red;"> Suspended : {{scholar.suspended}}</p>
+                            </div>
+                            <span class="pull-right">
+                                <img alt='image2' src={{scholar.image}}
+                                 class="img-responsive" style="max-height: 50px;">
+                            </span>
+
+                           </div>
+                       </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #nosus>
+    <p>No Student is Suspended</p>
+</ng-template>

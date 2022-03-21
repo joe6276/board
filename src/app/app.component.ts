@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'schoolBoard';
+  page:string=''
+  onSelected(feature:string){
+    this.page=feature
+  }
 }

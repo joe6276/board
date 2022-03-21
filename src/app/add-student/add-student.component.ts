@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Scholar } from '../Interfaces/scholar.interface';
 import { ScholarserVice } from '../Services/scholar.services';
 
 @Component({
@@ -7,7 +8,7 @@ import { ScholarserVice } from '../Services/scholar.services';
   styleUrls: ['./add-student.component.css']
 })
 export class AddStudentComponent implements OnInit {
-
+student:Scholar[]=[]
   constructor( private scholarService: ScholarserVice) { }
 
   ngOnInit(): void {
@@ -15,6 +16,9 @@ export class AddStudentComponent implements OnInit {
 
   AddScholar(name :string, email:string,year:string,role:string, image:string){
     this.scholarService.addScholar(name,email,year,role, image)
+    this.student= this.scholarService.scholar;
+    
+    
     }
 
     onSetTo(name:string){

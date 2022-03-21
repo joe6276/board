@@ -12,7 +12,7 @@ scholars:Scholar[]=[]
   constructor(private schoolservice:ScholarserVice) { }
 
   ngOnInit(): void {
-    this.scholars= this.schoolservice.getScholar()
+    this.scholars= this.schoolservice.susi
   }
 
 }

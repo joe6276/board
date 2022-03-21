@@ -1,8 +1,10 @@
+<br>
 <div class="container">
     <div class="row">
         <div class="col-xs-4">
             <div  *ngFor="let scholar of scholars">
-                <div class="panel panel-default" *ngIf="scholar.role!='teacher' else nosus">
+                <div  *ngIf="scholar.suspended =='yes'">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         {{scholar.name}}
                        </div>
@@ -26,6 +28,7 @@
                        </div>
                     
 
+                </div>
                 </div>
             </div>
         </div>

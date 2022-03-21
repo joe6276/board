@@ -9,16 +9,20 @@ import { ScholarserVice } from '../Services/scholar.services';
 })
 export class StudentComponent implements OnInit {
  scholars:Scholar[]=[]
-
+ susi:Scholar[]=[]
   constructor(private scholarService: ScholarserVice) { }
 
   ngOnInit(): void {
     this.scholars=this.scholarService.getScholar()
+
   }
 
   onSetTo(i: number ,name:string){
 
     this.scholarService.suspendScholar(i,name)
+    this.scholarService.susi
+    //console.log(this.scholarService.susi);
+    
       
   }
 

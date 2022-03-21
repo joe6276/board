@@ -2,7 +2,7 @@ import { Scholar } from "../Interfaces/scholar.interface";
 
 
 export class ScholarserVice{
-
+    susi:Scholar[]=[]
  scholar:Scholar[]=[{
     name :'Jonathan',
     email:'joendambuki16@gmail.com',
@@ -12,6 +12,52 @@ export class ScholarserVice{
     displinary:'no',
     image:'https://www.honorsociety.org/sites/default/files/styles/large/public/Graduation-Cheerful-Graduate-w.jpg?itok=IFCQl9gP'
 },
+{
+    name :'Jonathan',
+    email:'joendambuki16@gmail.com',
+    year:'3',
+    role:'scholar',
+    suspended:'no',
+    displinary:'no',
+    image:'https://www.honorsociety.org/sites/default/files/styles/large/public/Graduation-Cheerful-Graduate-w.jpg?itok=IFCQl9gP'
+},
+{
+    name :'Jonathan',
+    email:'joendambuki16@gmail.com',
+    year:'3',
+    role:'scholar',
+    suspended:'no',
+    displinary:'no',
+    image:'https://www.honorsociety.org/sites/default/files/styles/large/public/Graduation-Cheerful-Graduate-w.jpg?itok=IFCQl9gP'
+},
+{
+    name :'Jonathan',
+    email:'joendambuki16@gmail.com',
+    year:'3',
+    role:'scholar',
+    suspended:'no',
+    displinary:'no',
+    image:'https://www.honorsociety.org/sites/default/files/styles/large/public/Graduation-Cheerful-Graduate-w.jpg?itok=IFCQl9gP'
+},
+{
+    name :'Jonathan',
+    email:'joendambuki16@gmail.com',
+    year:'3',
+    role:'scholar',
+    suspended:'no',
+    displinary:'no',
+    image:'https://www.honorsociety.org/sites/default/files/styles/large/public/Graduation-Cheerful-Graduate-w.jpg?itok=IFCQl9gP'
+},
+{
+    name :'Jonathan',
+    email:'joendambuki16@gmail.com',
+    year:'3',
+    role:'scholar',
+    suspended:'no',
+    displinary:'no',
+    image:'https://www.honorsociety.org/sites/default/files/styles/large/public/Graduation-Cheerful-Graduate-w.jpg?itok=IFCQl9gP'
+}
+,
 {
     name :'Ndambuki',
     email:'joendambuki16@gmail.com',
@@ -43,8 +89,8 @@ addScholar(name:string,email:string,year:string,role:string, image:string){
             email:email,
             year:year,
             role:role,
-            suspended:"No",
-            displinary:"No",
+            suspended:"no",
+            displinary:"no",
             image:image
         }
     )
@@ -52,7 +98,16 @@ addScholar(name:string,email:string,year:string,role:string, image:string){
 
 suspendScholar(id:number, res:string){
     this.scholar[id].suspended=res
-    
+   const sus= this.scholar.slice(id,1)
+  
+   
+    sus.forEach((item)=>{
+        this.susi.push(item)
+    })
+     
+    this.scholar.splice(id,1)
+  
 }
+
 
 }
